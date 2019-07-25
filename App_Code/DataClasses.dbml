@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database" Class="data1" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[FeedBack Table]" Member="FeedBack_Tables">
+    <Type Name="FeedBack_Table">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MeetingBookingTable" Member="MeetingBookingTables">
+    <Type Name="MeetingBookingTable">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Meeting_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Meetings" Member="Meetings">
+    <Type Name="Meeting">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="event_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackageBookingTable" Member="PackageBookingTables">
+    <Type Name="PackageBookingTable">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PackageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackageTable" Member="PackageTables">
+    <Type Name="PackageTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PackageType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description3" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description4" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description5" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description6" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description7" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description8" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description9" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description10" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.payment" Member="payments">
+    <Type Name="payment">
+      <Column Name="payment_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="booking_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="cardtype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cardnumber" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="nameoncard" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="expdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResturantBookingTable" Member="ResturantBookingTables">
+    <Type Name="ResturantBookingTable">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resturant_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResturantTable" Member="ResturantTables">
+    <Type Name="ResturantTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResturantType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[room booking]" Member="room_bookings">
+    <Type Name="room_booking">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="email_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="noofrooms" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="noofperson" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idproof" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[room facility table]" Member="room_facility_tables">
+    <Type Name="room_facility_table">
+      <Column Name="facility_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="facility" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[room gallery table]" Member="room_gallery_tables">
+    <Type Name="room_gallery_table">
+      <Column Name="galleryid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="caption" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[room table]" Member="room_tables">
+    <Type Name="room_table">
+      <Column Name="Roomid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="roomtype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="roomrent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="description1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[spa booking]" Member="spa_bookings">
+    <Type Name="spa_booking">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="spa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.spagallery" Member="spagalleries">
+    <Type Name="spagallery">
+      <Column Name="galleryid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="spaid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="caption" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.spatharapy" Member="spatharapies">
+    <Type Name="spatharapy">
+      <Column Name="spaid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="spatype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="priceofspa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="description1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SystemTable" Member="SystemTables">
+    <Type Name="SystemTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ImageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BookingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[wedding booking]" Member="wedding_bookings">
+    <Type Name="wedding_booking">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="bridename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="groomname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="wedding_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[wedding gallery]" Member="wedding_galleries">
+    <Type Name="wedding_gallery">
+      <Column Name="gallery_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Weddingid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="caption" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[wedding type]" Member="wedding_types">
+    <Type Name="wedding_type">
+      <Column Name="weddingid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="weddingtype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="priceforveg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pricefornonveg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pricewithalcohol" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description2" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MeetingView" Member="MeetingViews">
+    <Type Name="MeetingView">
+      <Column Name="event_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Meeting_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackageView" Member="PackageViews">
+    <Type Name="PackageView">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PackageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PackageType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResturantView" Member="ResturantViews">
+    <Type Name="ResturantView">
+      <Column Name="ResturantType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resturant_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoomView" Member="RoomViews">
+    <Type Name="RoomView">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="email_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="noofrooms" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="noofperson" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idproof" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="roomtype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="roomrent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SPAView" Member="SPAViews">
+    <Type Name="SPAView">
+      <Column Name="spatype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="priceofspa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="spa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WeddingView" Member="WeddingViews">
+    <Type Name="WeddingView">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bridename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="groomname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="wedding_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="weddingtype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="priceforveg" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
